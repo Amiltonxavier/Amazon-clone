@@ -79,10 +79,11 @@ function App() {
           </nav>
         </section>
         <main className="px-20 space-y-8">
-          <section className="w-full">
+          <section className="w-full relative">
             <img src={Bg} alt="" className="w-full block bg-no-repeat bg-cover" />
-            <div className="grid md:grid-cols-3 gap-10 px-20 -mt-56">
-              <article className="bg-white p-5 space-y-4">
+            <div className="h-20 bg-gradient-to-b from-[#EFC6A8] to-gray-secondary" />
+            <div className="grid md:grid-cols-3 gap-10 px-20 -mt-72 h-full">
+              <article className="bg-white p-5 space-y-4 flex flex-col h-full">
                 <div className="inline-flex gap-4">
                   <div className="bg-[#ACB7B8] size-16 rounded-full flex justify-center items-center text-white p-4">
                     <User className="size-20" />
@@ -93,20 +94,20 @@ function App() {
                   </div>
                 </div>
                 <h5 className="font-bold text-base">Top links for you</h5>
-                <div className="grid md:grid-cols-2 gap-3">
-                  <div className="px-7 py-5 bg-gray-100 flex flex-col gap-5 justify-center items-center overflow-hidden">
+                <div className="grid md:grid-cols-2 gap-3 flex-grow">
+                  <div className="hover:scale-125 cursor-pointer duration-100 *:px-7 py-5 bg-gray-100 flex flex-col gap-5 justify-center items-center overflow-hidden">
                     <img src={box} alt="" className="h-20" />
                     <h5 className="font-medium text-lg leading-6 text-primary-black text-center">
                       Your Orders
                     </h5>
                   </div>
-                  <div className="px-7 py-5 bg-gray-100 flex flex-col gap-5 justify-center items-center overflow-hidden">
+                  <div className="hover:scale-125 cursor-pointer duration-100 px-7 py-5 bg-gray-100 flex flex-col gap-5 justify-center items-center overflow-hidden">
                     <img src={phone} alt="" className="h-20" />
                     <h5 className="font-medium text-lg leading-6 text-primary-black text-center">
-                      Mobiles & Acessories
+                      Mobiles & Accessories
                     </h5>
                   </div>
-                  <div className="px-7 py-5 bg-gray-100 flex flex-col gap-5 justify-center items-center overflow-hidden">
+                  <div className="hover:scale-125 cursor-pointer duration-100 px-7 py-5 bg-gray-100 flex flex-col gap-5 justify-center items-center overflow-hidden">
                     <img src={watch} alt="" className="h-20" />
                     <h5 className="font-medium text-lg leading-6 text-primary-black text-center">
                       Watch for Men
@@ -114,22 +115,23 @@ function App() {
                   </div>
                   <div className="hover:scale-125 cursor-pointer duration-100 px-7 py-5 bg-gray-100 flex flex-col gap-5 justify-center items-center overflow-hidden">
                     <img src={fashtion} alt="" />
-                    <h5 className="font-medium text-lg leading-6 text-primary-black text-center">Fashition</h5>
+                    <h5 className="font-medium text-lg leading-6 text-primary-black text-center">
+                      Fashion
+                    </h5>
                   </div>
                 </div>
               </article>
-              <article className="bg-white p-5 space-y-6 overflow-hidden">
+              <article className="bg-white p-5 space-y-6 flex flex-col h-full">
                 <h5 className="font-bold text-base">Up to 70% off <span /> Electronics<br /> clearance store</h5>
-                <div className="space-y-8">
+                <div className="space-y-8 flex-grow">
                   <div className="w-full">
                     <img src={Pc} alt="h-auto" className="w-full object-fill" />
                   </div>
-                  <span><a href="#" className="text-sm text-blue-500 hover:text-blue-600">See more</a></span>
+                  <span className=""><a href="#" className="text-sm text-blue-500 hover:text-blue-600">See more</a></span>
                 </div>
-
               </article>
-              <article className="space-y-6 overflow-hidden">
-                <div className="p-5 bg-white space-y-2">
+              <article className="space-y-6 flex flex-col h-full">
+                <div className="p-5 bg-white space-y-2 flex-grow">
                   <h5 className="font-bold text-lg">Shop on Amazon App</h5>
                   <div className="space-y-5">
                     <p>Fast convenient and secure | Over 17 crore products<br /> in your pocket</p>
@@ -142,14 +144,14 @@ function App() {
               </article>
             </div>
           </section>
-          <section className="grid grid-cols-3 gap-10 px-[75px]">
-            <div className="col-span-2 bg-secondaryHero h-[420px] bg-no-repeat w-full">
-              <div className="flex flex-col justify-between">
+          <section className="grid grid-cols-3 gap-10 px-[75px] w-full">
+            <div className="col-span-2 bg-secondaryHero h-[420px] bg-no-repeat w-full p-8 bg-cover">
+              <div className="flex flex-col justify-between text-white h-wull">
                 <div>
-                  <h4 className="text-xl text-white font-bold">Prime Video Recommendation for you</h4>
+                  <h4 className="text-2xl font-bold">Prime Video Recommendation for you</h4>
                   <span>La La Land (English)</span>
                 </div>
-                <span className="block mt-auto">Start watching on Prime</span>
+                <span className="block mt-auto justify-end items-end">Start watching on Prime</span>
               </div>
             </div>
             <div className="col-span-1">
